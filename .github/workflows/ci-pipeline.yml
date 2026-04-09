@@ -19,10 +19,10 @@ jobs:
           node-version: '20'
  
       - name: Install dependencies
-        run: npm install
+        run: npm ci
  
       - name: Run lint
-        run: npm run lint
+        run: npx eslint .
  
   # ── Job 2: Test ─────────────────────────────────────────────
   test:
@@ -38,7 +38,7 @@ jobs:
           node-version: '20'
  
       - name: Install dependencies
-        run: npm install
+        run: npm ci
  
       - name: Build the app
         run: npm run build
