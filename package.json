@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "node server.js",
+    "build": "echo build step",
     "start": "node server.js",
     "lint": "eslint .",
     "test": "node health.test.js"
